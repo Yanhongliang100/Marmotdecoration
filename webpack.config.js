@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
+var OpenBrowserPlugin = require('open-browser-webpack-plugin')
 
 module.exports = {
   entry: './src/script/app.js',
@@ -18,7 +19,7 @@ module.exports = {
     historyApiFallback: false,
     proxy: {
       '/api': {
-        target: 'http://localhost:3000',
+        target: 'http://localhost:8001',
         pathRewrite: {'^/api': ''}
       }
     }
@@ -50,6 +51,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
+        exclude: 'node_modules',
         loader: 'react-hot-loader!babel-loader'
       }
     ]
@@ -74,6 +76,9 @@ module.exports = {
       filename: 'app.css',
       disable: false,
       allChunks: true
+    }),
+    new OpenBrowserPlugin({
+    	url: 'http://localhost:9000'
     })
   ],
 
