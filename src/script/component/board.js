@@ -8,7 +8,7 @@ class Board extends React.Component {
   render() {
     return (
       <div className="m-board">
-        <div className="swiper"></div>
+        <div className="swiper">1</div>
         <ul>
           <li>
             <div>
