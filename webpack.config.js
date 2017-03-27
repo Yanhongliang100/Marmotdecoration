@@ -51,7 +51,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        exclude: 'node_modules',
+        exclude: /node_modules/,
         loader: 'react-hot-loader!babel-loader'
       }
     ]
@@ -69,7 +69,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.ejs',
       filename: 'index.html',
-      title: '豆瓣电影'
+      title: '土拨鼠装修'
     }),
     new ExtractTextPlugin({
       // filename: 'app_[hash].css',
@@ -84,6 +84,7 @@ module.exports = {
 
   externals: {
     'react': 'window.React',
-    'react-dom': 'window.ReactDOM'
+    'react-dom': 'window.ReactDOM',
+    'react-router': 'window.ReactRouter'
   }
 }

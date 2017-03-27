@@ -1,0 +1,95 @@
+@import "../fragment/yo-search";
+.m-search {
+  @include yo-search(
+    $name: default,
+    $padding: default,
+    $bgcolor: default,
+    $font-size: default,
+    $input-height: default,
+    $input-radius: default,
+    $input-bgcolor: #fccd05,
+    $input-color: #fff,
+    $placeholder-color: #fff,
+    $btn-bgcolor: default,
+    $btn-color: default,
+    $cancel-width: default,
+    $cancel-color: default
+  ){ }
+  .input{
+      text-align: center;
+  }
+  .activeList{
+      background-color: #fff;
+    .activeListP{
+          margin-bottom: 0.03rem;
+          height: 0.14rem;
+          
+          img{
+              height: 100%;
+              margin-left: 0.1rem;
+              margin-right: 0.05rem;
+          }
+      }
+      .activeListUl{
+        height: 1rem;
+        @include flexbox();
+        li{
+            height: 100%;
+            @include flex();
+            @include flexbox();
+            @include align-items(center);
+            @include justify-content(center);
+            img{
+                height: 60%;    
+            }
+            &:first-child img{
+                height: 80%;
+            }
+            
+        }
+      
+    }  
+  }
+  .imgTuKu{
+      margin-top: 0.1rem;
+      background-color: #fff;
+      .TuKu{
+          @include flexbox();
+          li{ 
+              @include flexbox();
+              @include flex();
+              @include flex-direction();
+              &:first-child img{
+                  height: 0.5rem;
+                  width: 1rem;
+                  outline:#fff;
+                  border: 0;
+              }
+              p{
+                @include flexbox();
+                @include flex-direction(column);
+                //@include align-items(center);
+                // @include justify-content(center); 
+                i{
+                    height: 50%;
+                    font-size: 0.14rem;
+                    font-weight: bold;
+                }
+                b{
+                    height: 50%;
+                    font-size: 0.12rem;
+                    font-weight: normal;
+                }
+              }
+              &:last-child img{
+                  //@include flexbox();
+                  //@include flex-direction();
+                  margin-right: 0.1rem;
+              }
+              
+          }
+      }
+      
+  }
+
+}
