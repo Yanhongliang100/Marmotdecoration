@@ -1,0 +1,18 @@
+{
+    "error_code": 0,
+    "msg": "活跃榜数据获取成功！",
+    "data": [
+        {
+            "comid": "272983",
+            "logosmall": "https://cdn01.tobosu.net/company_logo/2016-11-10/thumb_582445649356c.jpg"
+        },
+        {
+            "comid": "258543",
+            "logosmall": "https://cdn01.tobosu.net/company_logo/2017-03-12/thumb_58c4d0a017c47.png"
+        },
+        {
+            "comid": "273384",
+            "logosmall": "https://cdn01.tobosu.net/company_logo/2017-01-16/thumb_587c87fbe4f40.jpg"
+        }
+    ]
+}

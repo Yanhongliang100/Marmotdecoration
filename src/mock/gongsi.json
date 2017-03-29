@@ -1,0 +1,81 @@
+{
+    "error_code": 0,
+    "msg": "获取成功！",
+    "data": [
+        {
+            "logosmall": "http://img01.tobosu.net/users/zsgs/logo/2014/01-16/small/5567a307-85da-d3a8-04b7-8fe781c46774.jpg",
+            "comid": "31138",
+            "comsimpname": "轻舟装饰"
+        },
+        {
+            "logosmall": "https://cdn01.tobosu.net/company_logo/2017-03-05/thumb_58bbcf1a3db4b.jpg",
+            "comid": "258543",
+            "comsimpname": "原创艺墅装饰"
+        },
+        {
+            "logosmall": "http://img01.tobosu.net/users/zsgs/logo/2015/01-04/small/ce750458-e5d0-e294-b3ff-29aa65d0724d.jpg",
+            "comid": "264989",
+            "comsimpname": "亚光亚装饰"
+        },
+        {
+            "logosmall": "http://cdn01.tobosu.net/company_logo/2015-09-04/thumb_55e9a6c2be42e.jpg",
+            "comid": "268021",
+            "comsimpname": "美润万嘉装饰"
+        },
+        {
+            "logosmall": "http://cdn01.tobosu.net/company_logo/2016-10-12/thumb_57fdd84b89050.jpg",
+            "comid": "272705",
+            "comsimpname": "爱丽屋装饰"
+        },
+        {
+            "logosmall": "https://cdn01.tobosu.net/company_logo/2016-11-17/thumb_582d56912a0c1.png",
+            "comid": "272983",
+            "comsimpname": "富强永辉装饰"
+        },
+        {
+            "logosmall": "http://cdn01.tobosu.net/company_logo/2016-12-15/thumb_5851fc4bc510b.jpg",
+            "comid": "273216",
+            "comsimpname": "乐上名都"
+        },
+        {
+            "logosmall": "http://cdn01.tobosu.net/company_logo/2016-04-09/thumb_57087372af750.jpg",
+            "comid": "264565",
+            "comsimpname": "生活家装饰"
+        },
+        {
+            "logosmall": "https://cdn01.tobosu.net/company_logo/2017-01-17/thumb_587d8023833d8.jpg",
+            "comid": "273384",
+            "comsimpname": "梵客家装"
+        },
+        {
+            "logosmall": "https://img01.tobosu.net/users/zsgs/logo/2014/01-03/small/af4de180-2ea8-72e8-15d9-35a31a31d22f.jpg",
+            "comid": "34180",
+            "comsimpname": "北京合建装饰"
+        },
+        {
+            "logosmall": "https://img01.tobosu.net/users/zsgs/logo/2014/04-29/small/f871dd7f-7cb0-6d31-2324-26348f0be23d.jpg",
+            "comid": "37565",
+            "comsimpname": "阔达装饰"
+        },
+        {
+            "logosmall": "https://cdn01.tobosu.net/company_logo/2017-02-13/thumb_58a14399ad8d6.jpg",
+            "comid": "273301",
+            "comsimpname": "戎信装饰"
+        },
+        {
+            "logosmall": "https://cdn01.tobosu.net/company_logo/2017-03-07/thumb_58be26b4cf01a.jpg",
+            "comid": "273667",
+            "comsimpname": "就近家装"
+        },
+        {
+            "logosmall": "https://cdn01.tobosu.net/company_logo/2016-05-16/thumb_5739335b1490d.jpg",
+            "comid": "270420",
+            "comsimpname": "卓锐空间"
+        },
+        {
+            "logosmall": "https://cdn01.tobosu.net/company_logo/2017-03-22/thumb_58d2359cad480.jpg",
+            "comid": "273832",
+            "comsimpname": "帮你装装饰"
+        }
+    ]
+}

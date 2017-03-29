@@ -1,0 +1,12 @@
+{
+    "error_code": 0,
+    "msg": "装修课堂列表返回成功！",
+    "data": {
+        "qianqi": "http://m.tobosu.com/class/qianqi/?from=app",
+        "zhongqi": "http://m.tobosu.com/class/zhongqi/?from=app",
+        "houqi": "http://m.tobosu.com/class/houqi/?from=app",
+        "xuancai": "http://m.tobosu.com/class/xuancai/?from=app",
+        "sheji": "http://m.tobosu.com/class/sheji/?from=app",
+        "fengshui": "http://m.tobosu.com/class/fengshui/?from=app"
+    }
+}

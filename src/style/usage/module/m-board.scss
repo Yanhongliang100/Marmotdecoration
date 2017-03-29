@@ -1,12 +1,112 @@
-.m-board {
-  div.swiper {
-    height: 1.9rem;
-    background: #f9efd4;
+@import "../component/carousel";
+
+@include yo-carousel(
+
+){
+  height: 95%;
+  ul.cont {
+    height: 100%;
+    li {
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
   }
-  > ul {
-    height: 1.87rem;
-    margin: .2rem 0;
-    padding: .1rem;
-    background: #fff;
+};
+
+
+.m-board {
+  .swiper {
+    height:1.9rem;
+    background: #eee;
+  }
+  .kuang{
+      width: 100%;
+      height: 0.8rem;
+      background:#FFFFFF;
+      ul{
+          height: 100%;
+          width: 100%;
+          @include flexbox();
+          @include flex-direction();
+          @include align-items(center);
+          @include justify-content(center);
+          li{
+              width: 100%;
+              @include flexbox();
+              @include flex-direction(column);
+              @include align-items(center);
+              @include justify-content(center);
+              i{
+                  
+                  
+                @include flexbox();
+                @include flex-direction();
+                @include align-items(center);
+                @include justify-content(center); 
+                width: 100%;
+                margin-top: 0.03rem;
+                img{
+                    width: 80%;
+                    height: 80%;
+                }  
+              }
+              b{
+                  margin-top: 0.03rem;
+                  font-size: 0.12rem;
+                  color: #bebebe;
+              }
+              
+          }
+      }
+  }
+  .drn{
+      background: #FFFFFF;
+      margin-top: 0.05rem;
+      ul{
+          @include flexbox(); 
+          @include justify-content(space-between);  
+          margin: 0.05rem 0;
+          li{
+            margin: 0 0.1rem;
+            font-size: 0.14rem;
+            color: #bebebe;
+          }
+      }
+      .yo-scroller{
+          .scroller{
+              @include flexbox();
+              width: 4.5rem;
+              img{
+                  
+                  @include flexbox();
+                  @include flex-direction();
+                  @align-items(center);
+                  @include justify-content(center);
+                  @include transform(scale(1));
+                  width: 0.75rem;
+                  height: 0.75rem;
+                  
+              }
+          }
+      }
+  }
+  .xiaoguo{
+      width: 100%;
+      margin-top: 0.05rem;
+      ul{
+          @include flexbox(); 
+          @include justify-content(space-between);  
+          margin: 0.05rem 0;
+          li{
+            margin: 0 0.1rem;
+            font-size: 0.14rem;
+            color: #bebebe;
+          }
+      }
+      img{
+          width: 100%;
+      }
   }
 }

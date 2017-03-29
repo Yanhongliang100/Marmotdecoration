@@ -4,7 +4,7 @@ class Search extends React.Component {
 	constructor (props) {
     super(props)
     this.state = {
-      title: ''
+      logo: ''
     }
   }
 	
@@ -29,24 +29,59 @@ class Search extends React.Component {
 	            </ul>
 	        </div>
 	        <div className="imgTuKu">
-	            <ul className="TuKu">
-	              <li>
-	                <img src="./image/decorate_company_logo.png"/>
-	                <p>
-	                   <i>轻舟装饰</i>
-	                   <b>2天前</b>
-	                </p>
-	                <img src="./image/image_love_nor.png" />
-	              </li>
-	            </ul>
-	            <p>[华悦铭悦世家]·三居室·120~180㎡·35万</p>
-	            
+	            {this.state.logo}
 	        </div>
 	      </div>
 	    	
 	    	
     	
     )
+  }
+  componentDidMount() {
+    let url = 'http://localhost:3000/getList.php'
+    fetch(url)
+      .then(response=>response.json())
+      .then(res=>{
+         console.log(res.data[0].com_info.logosmall)
+         let imgLis = res.data.map(val=>{
+         	console.log(val)
+        return (
+        	<div>
+        	<ul className="ulTuKu">
+	              <li>
+	                <img className="ulImg" src={val.com_info.logosmall}/>
+	                <p>
+	                   <i>{val.com_info.comsimpname}</i>
+	                   <b>{val.check_time}</b>
+	                </p>
+	              </li>
+	              <li><img className="ulImg2" src="./image/image_love_nor.png" /></li>
+	              
+	        </ul>
+	        <div className="sanImg">
+	                <div className="bigImg">
+	                   <img src={val.index_image_url} />
+	                </div>
+	                <div className="smallImg">
+	                   <img src={val.img1} />
+	                   <img src={val.img2} />
+	                </div>
+	        </div>
+	        <p>{val.title}</p>
+	        </div>    
+	            )
+      })
+         
+       this.setState({
+        logo: imgLis
+        
+      })  
+      })
+      
+      
+      
+      
+      
   }
 }
 

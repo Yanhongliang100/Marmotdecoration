@@ -51,45 +51,76 @@
     }  
   }
   .imgTuKu{
-      margin-top: 0.1rem;
-      background-color: #fff;
-      .TuKu{
+      margin: 0.1rem 0rem;
+      background: #FFFFFF;
+      div{
+          
+          .ulTuKu{
+          height: 0.5rem;
+          
           @include flexbox();
-          li{ 
-              @include flexbox();
-              @include flex();
-              @include flex-direction();
-              &:first-child img{
-                  height: 0.5rem;
-                  width: 1rem;
-                  outline:#fff;
-                  border: 0;
-              }
-              p{
-                @include flexbox();
-                @include flex-direction(column);
-                //@include align-items(center);
-                // @include justify-content(center); 
-                i{
-                    height: 50%;
-                    font-size: 0.14rem;
-                    font-weight: bold;
-                }
-                b{
-                    height: 50%;
-                    font-size: 0.12rem;
-                    font-weight: normal;
-                }
-              }
-              &:last-child img{
-                  //@include flexbox();
-                  //@include flex-direction();
-                  margin-right: 0.1rem;
-              }
+          @include flex-direction();
+          
+          @include justify-content(space-between);         
+        li{ 
+          @include flexbox();
+          .ulImg{
+                width: 0.5rem;
+                height: 0.5rem;
+          }
+          p{
+            @include flexbox();
+            @include flex-direction(column);
+            //@include align-items(center);
+            //@include justify-content(center);
+            margin: 0 0 0 0.1rem;
+            i{
+               font-size: 0.14rem;
+               font-weight: bold; 
+            }
+            b{
+              font-size: 0.12rem;
+              font-weight: normal;
+              color: #acacac; 
+            }  
+          } 
+          .ulImg2{
+              width: 0.2rem;
+              height: 0.2rem;
+              margin: 0.15rem 0.1rem;
               
+          }  
+        } 
+      }
+      .sanImg{
+          @include flexbox()
+          height: 2rem;
+          .bigImg{
+            width: 70%;
+            height: 100%;
+            img{
+                height: 100%;
+                width: 100%;
+            } 
+          }
+          .smallImg{
+              width: 30%;
+              img{
+                  @include flexbox();
+                  @include flex-direction(column);
+                  @include align-items(center);
+                  @include justify-content(center);  
+                  width: 100%;
+                  height: 50%;
+              }
           }
       }
-      
+      p{
+          margin:0.1rem 0 0.1rem 0.1rem;
+          
+      }
   }
+      }
+      
 
 }

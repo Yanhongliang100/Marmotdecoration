@@ -1,0 +1,14 @@
+{
+    "error_code": 0,
+    "msg": "操作成功！",
+    "data": [
+        {
+            "img_url": "http://cdn01.tobosu.net/ke_file/2017-01-04/m_586cbed00eb19.png",
+            "content_url": "http://m.tobosu.com/app/pub?channel=seo&amp;subchannel=android"
+        },
+        {
+            "img_url": "http://cdn01.tobosu.net/ke_file/2017-01-04/m_586cbf3ca7643.png",
+            "content_url": "http://m.tobosu.com/class/qianqi/49.html?from=app"
+        }
+    ]
+}

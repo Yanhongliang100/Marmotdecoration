@@ -4,10 +4,11 @@
   height: 100%;
   header {
     height: .44rem;
-    background: green;
+    background: yellow;
   }
   section {
     flex: 1;
+    overflow: auto;
   }
   footer {
     height: .5rem;
