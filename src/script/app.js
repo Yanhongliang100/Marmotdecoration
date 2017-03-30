@@ -10,7 +10,7 @@ import Search from './component/search'
 import My from './component/my'
 import Decoration from './component/decoration'
 import Resginter from './component/resginter'
-
+import Listxi from './component/listxi'
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Index}>
@@ -22,6 +22,7 @@ ReactDOM.render(
       <Route path="my" component={My}></Route>
     </Route>
     <Route path="/resginter" component={Resginter}></Route>
+    <Route path="/listxi/:type" component={Listxi}></Route>
   </Router>,
   document.getElementById('root')
 )
