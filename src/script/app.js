@@ -9,7 +9,7 @@ import Board from './component/board'
 import Search from './component/search'
 import My from './component/my'
 import Decoration from './component/decoration'
-
+import Resginter from './component/resginter'
 
 ReactDOM.render(
   <Router history={hashHistory}>
@@ -21,6 +21,7 @@ ReactDOM.render(
       <Route path="decoration" component={Decoration}></Route>
       <Route path="my" component={My}></Route>
     </Route>
+    <Route path="/resginter" component={Resginter}></Route>
   </Router>,
   document.getElementById('root')
 )

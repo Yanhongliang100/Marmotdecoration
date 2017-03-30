@@ -1,0 +1,44 @@
+.m-my{
+    
+    height: 100%;
+    background: #EEEEEE url('/image/welcome_image.png') no-repeat;
+    background-position: 0 -1rem;
+    background-size: 100%;
+    .my-login{
+        height: 100%;
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items(center);
+        @include justify-content(center);
+        div{
+            
+            input{
+                height: 0.4rem;
+                width: 2rem;
+                border: none;
+                border-bottom:1px solid #000;
+                background: none;
+            }
+            i{
+                margin: 0 0.1rem;
+                img{
+                  height: 0.2rem; 
+                }
+            }
+        }
+        .yonghu {
+            @include flexbox();
+            @include flex-direction(column);
+            @include align-items(center);
+            @include justify-content(center);
+            button{
+                width: 2rem;
+                border: none;
+                background-color:#ffb955;
+                font-size: 0.14rem;
+                height: 0.3rem;
+                line-height: 0.2rem;
+            }
+        }
+    }
+}

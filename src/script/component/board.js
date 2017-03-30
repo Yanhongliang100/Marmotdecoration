@@ -1,6 +1,8 @@
 import React from 'react'
 import Carousel from '../../component_dev/carousel/src/'
 import Scroller from '../../component_dev/scroller/src/'
+import fetchData from '../util/util.fetch.js'
+import { Link } from 'react-router'
 
 class Board extends React.Component {
   constructor(props) {
@@ -78,22 +80,14 @@ class Board extends React.Component {
 
   componentDidMount() {
     let url = 'http://localhost:3000/banner.php'
-    fetch(url)
-      .then(response=>response.json())
-      .then(res=>{
-      //console.log(res.data[0].img_url)
-      let Lis = res.data.map(val=>{
+    fetchData(url, function (res) {
+    	let Lis = res.data.map(val=>{
         return (<li className="item"><img className="img" src={val.img_url} /></li>)
       })
-      
-      
-      
-      
-      this.setState({
-        swiperList: Lis,
-        
+    	this.setState({
+        swiperList: Lis, 
       })
-      })
+    } .bind(this))
   }
 }
 

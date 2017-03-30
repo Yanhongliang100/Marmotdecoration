@@ -1,4 +1,5 @@
 import React from 'react'
+import fetchData from '../util/util.fetch.js'
 
 class Search extends React.Component {
 	constructor (props) {
@@ -39,10 +40,8 @@ class Search extends React.Component {
   }
   componentDidMount() {
     let url = 'http://localhost:3000/getList.php'
-    fetch(url)
-      .then(response=>response.json())
-      .then(res=>{
-         console.log(res.data[0].com_info.logosmall)
+    fetchData(url, function (res) {
+    	console.log(res.data[0].com_info.logosmall)
          let imgLis = res.data.map(val=>{
          	console.log(val)
         return (
@@ -71,12 +70,13 @@ class Search extends React.Component {
 	        </div>    
 	            )
       })
-         
-       this.setState({
-        logo: imgLis
+        this.setState({
+        	logo: imgLis
         
-      })  
-      })
+        }) 
+    	
+    }.bind(this))  
+    
       
       
       

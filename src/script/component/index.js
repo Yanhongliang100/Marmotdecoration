@@ -61,7 +61,7 @@ class Index extends React.Component {
   }
 
   componentDidMount() {
-    // console.log(this.refs.board.props.title);
+    
   }
 }
 
