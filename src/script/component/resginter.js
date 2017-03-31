@@ -24,7 +24,7 @@ class Resginter extends React.Component {
 						console.log("用户名重名")
 					}else if(res==1){
 						console.log("注册成功")
-						window.location.href = "http://localhost:9000/#/board"
+						window.location.href = "http://localhost:9000/#/my"
 					}else{
 						console.log("服务器繁忙，请稍后注册")
 					}
@@ -33,12 +33,15 @@ class Resginter extends React.Component {
 	
   render() {
     return (
+    	
     	<div className="my-reginser">
-            <input type="text" ref="userId"/>
-            <input type="text" ref="pwd"/>
-            <button onClick={this.reginser}>注册</button> 
+    	    <div>
+            <p>用户名:<input type="text" placeholder="请输入用户名" ref="userId"/></p><br/>
+            <p>新密码:<input type="text" placeholder="请输入密码" ref="pwd"/></p><br/>
+            <p>确密码:<input type="text" placeholder="请确认密码" /></p><br/>
+            <button onClick={this.reginser}>注册</button> </div>
         </div>
-      
+       
     )
   }
   componentDidMount() {

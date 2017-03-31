@@ -21,6 +21,7 @@ class My extends React.Component {
             	console.log(res)
             }.bind(this))
 			localStorage.setItem("username",username);
+			window.location.href="http://localhost:9000/#/board"
 		}
 	}
 	

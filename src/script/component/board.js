@@ -17,7 +17,7 @@ class Board extends React.Component {
     return (
       <div className="m-board">
         <div className="swiper">
-          <Carousel autoplay={false}>
+          <Carousel autoplay={true}>
             {this.state.swiperList}
           </Carousel>
         </div>
@@ -87,8 +87,10 @@ class Board extends React.Component {
     	this.setState({
         swiperList: Lis, 
       })
-    } .bind(this))
+    }.bind(this))
   }
+  
+  
 }
 
 export default Board

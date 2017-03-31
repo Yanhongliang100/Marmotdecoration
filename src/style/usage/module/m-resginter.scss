@@ -1,0 +1,38 @@
+
+
+
+.my-reginser{
+    @include flexbox();
+    @include flex-direction(column);
+    height: 100%;
+    background: #fff6e7 url('/image/welcome_image.png') no-repeat;
+    background-size: cover;
+    
+    
+    div{
+        margin-top: 0.2rem;
+        width:100%;
+        height: 100%;
+        @include flexbox();
+        @include flex-direction(column);
+        @align-items(center);
+        @include justify-content(center);
+        p{
+            margin-left: 20%;
+            font-weight: bold;
+            input{
+                margin: 0 20% 0 0;
+                height: .3rem;
+                
+            }
+        }
+        button{
+            margin: 0 20%;
+            height: .3rem;
+            font-weight: bold;
+            background-color: #ffb955;
+            border: none;
+        }
+    
+    }
+}

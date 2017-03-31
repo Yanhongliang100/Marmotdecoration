@@ -6,7 +6,7 @@ class Index extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      title: '土拨鼠'
+      title: ''
     }
   }
 
@@ -35,7 +35,7 @@ class Index extends React.Component {
                 <i className="iconfont">&#xe604;</i>
                 <b>首页</b>
               </Link>
-            </li>
+            </li>	
             <li>
               <Link to="/search" onClick={this.clickHandler.bind(this, '逛图库')} activeClassName="active">
                 <i className="iconfont">&#xe601;</i>
