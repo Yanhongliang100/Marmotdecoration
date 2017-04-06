@@ -25,7 +25,7 @@ class Board extends React.Component {
            <ul>
               <li>
                  
-                  <i><img src="./image/icon_calculater.png"/></i>
+                  <i><Link to="/list"><img src="./image/icon_calculater.png"/></Link></i>
                   <b>设计与报价</b>
               </li>
               <li>

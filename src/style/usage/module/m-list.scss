@@ -1,0 +1,54 @@
+.m-content {
+  @include flexbox();
+  @include flex-direction(column);
+  height: 100%;
+  header {
+    height: .44rem;
+    background: yellow;
+  }
+  section {
+    flex: 1;
+    overflow: auto;
+  }
+  footer {
+    height: .5rem;
+    background: #eee;
+    @include border(1px 0 0 0, #000);
+    ul{
+      width: 100%;
+      height: 100%;
+      @include flexbox();
+      @include flex-direction();
+      @include align-items(center);
+      @include justify-content(space-between);
+      padding: 0 0.2rem;
+      .li{
+          @include flexbox();
+          @include flex-direction(column);
+          img{
+              height: 0.2rem;
+              width: 0.2rem;
+          }
+          i{
+              font-size: 0.12rem;
+              color: #a8a8a8;
+          }
+      }
+      .li2{
+          span{
+              padding: 0.1rem 0.4rem;
+              font-size: 0.14rem;
+              color: #FFFFFF;
+              background-color: #fdc644;
+              border-radius: 0.05rem;
+              
+          }
+      }
+      li{
+        @include flexbox();
+        
+      }
+    }
+    
+  }
+}
